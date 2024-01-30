@@ -5,11 +5,11 @@ const cors = require('cors')
 const app = express()
 app.use(cors())
 app.use(express.json())
-const USERNAME = process.env.DB_USERNAME;
-const PASSWORD = process.env.DB_PASSWORD; 
+/*const USERNAME = process.env.DB_USERNAME;
+const PASSWORD = process.env.DB_PASSWORD; */
 //const dbUrl = 'mongodb+srv://rohit10231:rohitkaranpujari@cluster0.kjynvxt.mongodb.net/?retryWrites=true&w=majority'
 //const client = new MongoClient(dbUrl)
-const dbUrl = `mongodb+srv://${USERNAME}:${PASSWORD}@gmailclone.jguf4dm.mongodb.net/?retryWrites=true&w=majority`
+const dbUrl = `mongodb+srv://anitha:anithautira@gmailclone.jguf4dm.mongodb.net/?retryWrites=true&w=majority`
 const client = new MongoClient(dbUrl)
 const port = 6000
 
