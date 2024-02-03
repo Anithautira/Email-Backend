@@ -5,12 +5,12 @@ const cors = require('cors')
 const app = express()
 app.use(cors())
 app.use(express.json())
-const USERNAME = process.env.DB_USERNAME;
-const PASSWORD = process.env.DB_PASSWORD; 
+/*const USERNAME = process.env.DB_USERNAME;
+const PASSWORD = process.env.DB_PASSWORD; */
 //const dburl=process.env.DB_URL
-const dbUrl ='mongodb+srv://USERNAME:PASSWORD@cluster0.bkxcvcz.mongodb.net/?retryWrites=true&w=majority'
+const dbUrl ='mongodb+srv://anitha:anithautira@cluster0.bkxcvcz.mongodb.net/?retryWrites=true&w=majority'
 const client = new MongoClient(dbUrl)
-const port = 6000
+const port = 6500
 
 // getting all emails from all emails collection
 app.get('/', async (req, res) => {
